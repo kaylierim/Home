@@ -4,10 +4,9 @@ h1 {
 }
 
 .section {
+    opacity: 0;
     text-align: center;
     margin: 25px;
-    animation-name: slideInLeft;
-    animation-duration: 1s;
 }
 
 .workexperience > h3 {
@@ -59,9 +58,15 @@ h1 {
     text-align: center;
 }
 
+.show {
+    opacity: 1;
+    animation-name: slideInLeft;
+    animation-duration: 1s;
+}
+
 @keyframes slideInLeft {
     from {
-        transform: translateX(-300px);
+        transform: translateX(-500px);
     }
     to {
         transform: translateX(0);
