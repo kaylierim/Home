@@ -1,3 +1,92 @@
+@font-face {
+    font-family: retroFont;
+    src: url(ALBAS___.TTF);
+}
+
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
 h1 {
+    margin-top: 50px;
     text-align: center;
+}
+
+.retro {
+    font-family: retroFont;
+    font-size: larger;
+}
+
+.title {
+    text-align: center;
+    padding: 10px;
+    background-color: #126497a6;
+    border-radius: 5px;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    width: 75%;
+    margin: 0 auto;
+}
+
+.margin {
+    margin-bottom: 20px;
+}
+
+.quote {
+    display: flex;
+    justify-content: center;
+    background-color: #fbf8e6;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.083);
+    padding: 10px;
+}
+
+.book {
+    float: left;
+    margin: 20px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.review {
+    margin-right: 20px;
+    line-height: 125%;
+    font-size: large;
+}
+
+.center {
+    text-align: center;
+}
+
+.specialbtn {
+    font-size: 1rem;
+    font-weight: 700;
+    padding: 0.5em 1em;
+    color: rgb(192, 192, 192);
+    background-color: rgb(255, 255, 255);
+    border: 5px solid;
+    border-radius: 5px;
+    transition: transform 0.3s ease 0s;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.05);
+}
+
+.specialbtn:hover {
+    transform: translateY(-5px);
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    text-align: center;
+    background-color: #126497a6;
+    padding: 20px;
 }
