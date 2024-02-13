@@ -57,7 +57,6 @@ h1 {
 .review {
     margin-right: 20px;
     line-height: 125%;
-    font-size: large;
 }
 
 .center {
@@ -81,9 +80,7 @@ h1 {
 }
 
 .footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
+    display: block;
     width: 100%;
     color: white;
     text-align: center;
