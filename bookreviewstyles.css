@@ -1,11 +1,11 @@
 @font-face {
     font-family: retroFont;
-    src: url(ALBAS___.TTF);
+    src: url(fonts/ALBAS___.TTF);
 }
 
 @font-face {
     font-family: eina;
-    src: url(eina-01-semibold.ttf);
+    src: url(fonts/eina-01-semibold.ttf);
 }
 
 body {
