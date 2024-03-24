@@ -1,3 +1,4 @@
+/* Fonts */
 @font-face {
     font-family: retroFont;
     src: url(fonts/ALBAS___.TTF);
@@ -8,10 +9,12 @@
     src: url(fonts/eina-01-semibold.ttf);
 }
 
+/* Body */
 body {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
+/* Headings */
 h1 {
     margin-top: 70px;
     text-align: center;
@@ -19,23 +22,25 @@ h1 {
     font-size: 35pt;
 }
 
+/* Paragraphs and Lists */
 p, li {
     font-family: 'Times New Roman', Times, serif;
     font-size: 16pt;
 }
 
+/* Box */
 .box {
     background: linear-gradient(140deg, #0a3a58, #126497, #faf8eb);
     display: flex;
     justify-content: center;
-    margin-bottom: 20px;
+    margin: 50px auto 20px auto;
     width: 60%;
-    margin: 50px auto;
     border-radius: 25px;
     overflow: hidden;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.083);
 }
 
+/* Box Parts */
 .part {
     position: relative;
     display: flex;
@@ -62,12 +67,14 @@ p, li {
     transform: translate(20px, 20px);
 }
 
+/* Book Image */
 .curr-book-image {
     position: absolute;
     top: 0;
     left: 0;
 }
 
+/* Horizontal Rule */
 hr {
     border: 5px solid #0a3a58;
     border-radius: 10px;
@@ -76,29 +83,68 @@ hr {
     margin-bottom: 50px;
 }
 
+/* Middle */
 .middle {
     width: 60%;
     margin: 0 auto;
 }
 
+/* Review Box */
 .review-box {
+    position: relative;
     padding: 10px;
-    background-color: #126497a6;
     border-radius: 25px;
-    margin: 0 auto;
-    margin-bottom: 10px;
+    margin: 0 auto 10px auto;
     width: 60%;
     height: 16em;
+    overflow: hidden;
 }
 
+.review-box::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    filter: blur(40px);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 125%;
+    border-radius: 25px;
+    z-index: -1;
+}
+
+/* Review Box Right */
+.review-box-right {
+    position: relative;
+    padding: 5px;
+    border-radius: 15px;
+    z-index: 0;
+    height: 15em;
+}
+
+.review-box-right::before {
+    content: '';
+    position: absolute;
+    right: 0;
+    width: calc(100% - 180px);
+    height: 100%;
+    background-color: white;
+    filter: opacity(50%);
+    border-radius: 15px;
+    z-index: -1;
+}
+
+/* Book Image */
 .book-image {
     height: 15em;
     float: left;
     margin: 10px;
     margin-right: 20px;
     border-radius: 10px;
+    z-index: 2;
 }
 
+/* Footer */
 .footer {
     display: block;
     width: 100%;
