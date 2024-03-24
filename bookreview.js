@@ -41,20 +41,7 @@ function createReview(review) {
 
     const content = document.createElement('p');
     content.classList.add('review-content');
-    // Function to update review content length based on window width
-    function updateReviewContentLength() {
-        const availableSpace = window.innerWidth - 400; // Adjust as needed based on your layout
-        const maxLength = Math.floor(availableSpace / 7); // Adjust the division factor based on your font size and layout
-        const truncatedContent = review.content.length > maxLength ? review.content.substring(0, maxLength) + "..." : review.content;
-
-        content.innerHTML = truncatedContent; // Update content
-    }
-
-    // Initial update
-    updateReviewContentLength();
-
-    // Update review content length when window is resized
-    window.addEventListener('resize', updateReviewContentLength);
+    content.innerHTML = review.content.substring(0, 125) + "...";
     rightBox.appendChild(content);
 
     return box;

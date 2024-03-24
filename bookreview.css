@@ -22,6 +22,10 @@ h1 {
     font-size: 35pt;
 }
 
+h2 {
+    font-size: 22pt;
+}
+
 /* Paragraphs and Lists */
 p, li {
     font-family: 'Times New Roman', Times, serif;
@@ -129,7 +133,7 @@ hr {
     width: calc(100% - 180px);
     height: 100%;
     background-color: white;
-    filter: opacity(50%);
+    filter: opacity(65%);
     border-radius: 15px;
     z-index: -1;
 }
@@ -140,7 +144,7 @@ hr {
     float: left;
     margin: 10px;
     margin-right: 20px;
-    border-radius: 10px;
+    border-radius: 15px;
     z-index: 2;
 }
 
@@ -152,4 +156,24 @@ hr {
     text-align: center;
     background-color: #126497a6;
     padding: 20px;
+}
+
+@media (max-width: 1000px) {
+
+    .flex,
+    .box {
+        width: 100%;
+    }
+
+    .book-image {
+        display: none;
+    }
+
+    .review-box {
+        width: 90%;
+    }
+
+    .review-box-right::before {
+        width: 100%;
+    }
 }
