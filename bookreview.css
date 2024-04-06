@@ -91,6 +91,7 @@ hr {
 .middle {
     width: 60%;
     margin: 0 auto;
+    margin-bottom: 20px;
 }
 
 /* Review Box */
@@ -133,7 +134,7 @@ hr {
     width: calc(100% - 180px);
     height: 100%;
     background-color: white;
-    filter: opacity(65%);
+    filter: opacity(40%);
     border-radius: 15px;
     z-index: -1;
 }
